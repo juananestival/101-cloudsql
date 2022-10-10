@@ -1,0 +1,24 @@
+{
+  "detectIntentResponseId": "423fa989-651c-410d-9049-11b7890a6200",
+  "pageInfo": {
+    "currentPage": "projects/cepf-l300-juananestival/locations/global/agents/72eac020-a0bb-469c-93f4-dd0df3082047/flows/00000000-0000-0000-0000-000000000000/pages/6935c97f-ff7c-4886-9603-292eef406039",
+    "displayName": "Confirm"
+  },
+  "sessionInfo": {
+    "session": "projects/cepf-l300-juananestival/locations/global/agents/72eac020-a0bb-469c-93f4-dd0df3082047/sessions/26926c-a2f-cc0-729-896ed5fc1",
+    "parameters": { "product": "nest", "quantity": 2.0 }
+  },
+  "fulfillmentInfo": { "tag": "purchase" },
+  "messages": [
+    {
+      "text": {
+        "text": ["you have ordered 2 nest"],
+        "redactedText": ["you have ordered 2 nest"]
+      },
+      "responseType": "ENTRY_PROMPT",
+      "source": "VIRTUAL_AGENT"
+    }
+  ],
+  "text": "2",
+  "languageCode": "en"
+}
