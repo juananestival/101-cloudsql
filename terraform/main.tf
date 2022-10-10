@@ -28,3 +28,13 @@ module "cloudsql_postgresql_instance" {
   region = var.region
 
 }
+
+module "python_function_main" {
+  source               = "./modules/function"
+  project              = var.project
+  function_name        = "python-webhook"
+  function_entry_point = "main"
+  sourcefn             = "python"
+  runtimefn              = "python310"
+  region = var.region
+}

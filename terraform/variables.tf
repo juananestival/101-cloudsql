@@ -1,5 +1,5 @@
 variable "project" {
-    default = "cepf-l300-juananestival"
+    default = "borrar-juanan-10"
 }
 variable "region" {
     default = "us-central1"
