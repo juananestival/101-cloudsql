@@ -29,3 +29,5 @@ stmt = sqlalchemy.text('insert into {} ({}) values ({})'.format(table_name, tabl
 ```py
 stmt = sqlalchemy.text('insert into {} ({}, {}) values ({}, {})'.format(table_name, table_field1, table_field_value1, table_field2, table_field_value2))
 ```
+
+get the connection name in the output 
