@@ -26,7 +26,6 @@ module "cloudsql_postgresql_instance" {
   source               = "./modules/cloudSQL"
   project              = var.project
   region = var.region
-
 }
 
 module "python_function_main" {
