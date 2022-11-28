@@ -8,7 +8,7 @@
     "session": "projects/cepf-l300-juananestival/locations/global/agents/72eac020-a0bb-469c-93f4-dd0df3082047/sessions/26926c-a2f-cc0-729-896ed5fc1",
     "parameters": { "product": "nest", "quantity": 2.0 }
   },
-  "fulfillmentInfo": { "tag": "purchase" },
+  "fulfillmentInfo": { "tag": "get-pin" },
   "messages": [
     {
       "text": {
