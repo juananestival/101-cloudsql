@@ -1,0 +1,38 @@
+{
+    "detectIntentResponseId":"c829131c-aae6-4a3a-99a7-90b7fa5e7e4c",
+    "pageInfo":{
+       "currentPage":"projects/ccai-cepf-level-300/locations/global/agents/b921fabc-359b-4175-8d98-69274420b79c/flows/4716b5ca-6f01-4490-9723-46ad49b13cf9/pages/46c9cecf-9575-484b-b675-f4b3291704e9",
+       "formInfo":{
+          "parameterInfo":[
+             {
+                "displayName":"pin_number",
+                "required":true,
+                "state":"FILLED",
+                "value":[
+                   "1234"
+                ],
+                "justCollected":true
+             }
+          ]
+       },
+       "displayName":"Collect PIN"
+    },
+    "sessionInfo":{
+       "session":"projects/ccai-cepf-level-300/locations/global/agents/b921fabc-359b-4175-8d98-69274420b79c/sessions/679604-2d7-eff-c21-845934cb6",
+       "parameters":{
+          "has_welcomed_user":true,
+          "is_returning":true,
+          "operation":"Purchase Item",
+          "operation_complete":false,
+          "order_unit":"Pixel 5",
+          "pin_number":[
+             "1234"
+          ]
+       }
+    },
+    "fulfillmentInfo":{
+       "tag":"validate-pin"
+    },
+    "text":"1234",
+    "languageCode":"en"
+ }
