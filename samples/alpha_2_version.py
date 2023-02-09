@@ -28,7 +28,7 @@ def main(initial_request):
     if tag == 'validate-pin':
         msg, params = db_validate_pin(initial_request)
     elif tag == 'update-order':    
-        msg, params = update_orders()
+        msg, params = update_orders(initial_request)
     elif tag == 'empty-orders-table':
         msg, params = empty_orders_table()
     else:
@@ -108,13 +108,21 @@ def db_validate_pin(req):
     except Exception as e:
         return 'Error: {}'.format(str(e))
     
-def update_orders():
+def update_orders(req):
     print ('Updating shoping cart...')
+    request_json = req.get_json()
+    if not (request_json.get("sessionInfo").get("parameters").get("cart")):
+        params = {}
+        return "no pin provided", params
     table_name = "orders"
-    productName = "pixel", 
+    cart_param = request_json['sessionInfo']['parameters']['cart']
+    # The param is received like a list. Let's extract the value
+    productName = cart_param[0]
+    print (f'product {productName}')
+    print (f'cart {cart_param}')
     customerPhone = "+1555", 
     quantity = 1
-    stmt1 = sqlalchemy.text(f'insert into {table_name} (productName, customerPhone, quantity) values ({productName}, {customerPhone}, {quantity})')
+    stmt1 = sqlalchemy.text(f'insert into {table_name} (productName, customerPhone, quantity) values (\'{cart_param }\', \'+1-555-555-555\', {quantity})')
 
     db = sqlalchemy.create_engine(
         sqlalchemy.engine.url.URL(
